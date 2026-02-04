@@ -23,6 +23,5 @@ jobs:
           </body>
           </html>
           EOF
-
-schedule:
-  - cron: "*/1 * * * *"
+  schedule:
+    - cron: "*/1 * * * *"
