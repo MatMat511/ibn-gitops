@@ -1,18 +1,20 @@
 name: IBN Pages
- on:
+
+on:
   push:
     branches: [ main ]
 
- jobs:
-  apply-intent:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
+  jobs:
+    apply-intent:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v4
 
-    - name: Lire intent
+      - name: Lire intent
         run: |
           echo "Prise en compte de l'intention:"
           cat intent.yaml
-    - name: Déploiement
+
+      - name: Déploiement
         run: |
           echo "Le site doit être public et en https"
